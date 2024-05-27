@@ -1,0 +1,24 @@
+[
+  {
+    "nombre": "Producto 1",
+    "precio": 5000,
+    "descripcion": "Descripción del producto 1"
+  },
+  {
+    "nombre": "Producto 2",
+    "precio": 10000,
+    "descripcion": "Descripción del producto 2"
+  },
+  {
+    "nombre": "Producto 3",
+    "precio": 7500,
+    "descripcion": "Descripción del producto 3"
+  },
+  {
+    "nombre": "Producto 4",
+    "precio": 12000,
+    "descripcion": "Descripción del producto 4"
+  }
+  
+  ...
+]

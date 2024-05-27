@@ -1,0 +1,249 @@
+/* Estilos específicos para la página de Tienda */
+.product-card {
+    border: 1px solid #ddd; /* Borde del producto */
+    border-radius: 10px;
+    padding: 15px;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.product-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra al pasar el cursor */
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product-card .card-title {
+    font-weight: bold;
+}
+
+.product-card .card-text {
+    color: #666;
+}
+
+.product-card .btn {
+    background-color: #4CAF50;
+    border: none;
+}
+
+.product-card .btn:hover {
+    background-color: #45a049; /* Color verde más oscuro al pasar el cursor */
+}
+
+#donations-section {
+    padding: 50px 0;
+    background-color: #f8f9fa; /* Color de fondo */
+}
+
+#donations-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.donation-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.donation-form input[type="text"],
+.donation-form input[type="email"],
+.donation-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.donation-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.donation-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50; /* Color verde */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.donation-form button:hover {
+    background-color: #45a049; /* Color verde más oscuro al pasar el cursor */
+}
+
+/* Estilos del carousel */
+#hero-carousel {
+    margin-top: 20px;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carousel-caption h1,
+.carousel-caption p {
+    color: #fff;
+    text-align: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #4CAF50;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #45a049; /* Color verde más oscuro al pasar el cursor */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 0.9 rem; /* Ancho deseado */
+  height: 0.9 rem; /* Alto deseado */
+}
+
+
+
+/* Resto de los estilos del sitio */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+    border-bottom: 3px solid #4CAF50; /* Color verde */
+}
+
+.navbar-brand img {
+    max-height: 50px;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #4CAF50; /* Color verde al pasar el cursor */
+}
+
+/* Sección Nosotros */
+.card {
+    border: none;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+/* Estilos del formulario de donación */
+#contactForm {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contactForm input,
+#contactForm textarea {
+    margin-bottom: 15px;
+}
+
+#contactForm button {
+    background-color: #4CAF50;
+    border: none;
+}
+
+#contactForm button:hover {
+    background-color: #45a049; /* Color verde más oscuro al pasar el cursor */
+}
+
+/* Footer */
+footer {
+    background-color: #343a40; /* Color oscuro */
+    color: #fff;
+}
+
+/* Iconos de redes sociales en el footer */
+footer a {
+    color: #fff;
+    margin: 0 5px;
+}
+
+/* Estilos para las secciones adicionales */
+#satisfaccion-garantizada,
+#puntos-retiro,
+#puerta-casa {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#satisfaccion-garantizada h2,
+#puntos-retiro h2,
+#puerta-casa h2 {
+    margin-bottom: 30px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: #333;
+}
+
+#satisfaccion-garantizada p,
+#puntos-retiro p,
+#puerta-casa p {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #666;
+}
+
+#satisfaccion-garantizada a,
+#puntos-retiro a,
+#puerta-casa a {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#satisfaccion-garantizada a:hover,
+#puntos-retiro a:hover,
+#puerta-casa a:hover {
+    color: #45a049;
+}
+
+.btn-sumar-cantidad {
+      color: #ffffff;
+      background-color: #28a745; /* Color verde */
+      border-color: #28a745;
+    }
+
+    .btn-restar-cantidad {
+      color: #ffffff;
+      background-color: #dc3545; /* Color rojo */
+      border-color: #dc3545;
+    }

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compras</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/lux/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="logo.png" alt="Logo" width="150">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html" onclick="loadSection('inicio')">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="nosotros.html" onclick="loadSection('nosotros')">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tienda.html" onclick="loadSection('tienda')">Tienda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="donaciones.html" onclick="loadSection('donaciones')">Donaciones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html" onclick="loadSection('contacto')">Contacto</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="carrito.html">
+            <i class="fas fa-shopping-cart"></i> Carrito
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="registro.html" data-toggle="modal" data-target="#registroModal">
+            Registro / Iniciar Sesión
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<section id="carrito" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Carrito de Compras</h2>
+    <ul id="lista-productos" class="list-group mb-3">
+    </ul>
+    <p class="total mb-3">Total: <span id="total">$0.00</span></p>
+    <button id="vaciar-carrito" class="btn btn-danger">Vaciar Carrito</button>
+    <a href="pagar.html" class="btn btn-success mt-2">Ir a Pagar</a>
+  </div>
+</section>
+<footer class="bg-dark text-white text-center py-4">
+  <div class="container">
+    <p>&copy; 2024 Tienda de Mascotas Solidaria. Todos los derechos reservados.</p>
+    <p>Síguenos en <a href="#" class="text-white"><i class="fab fa-facebook"></i></a> <a href="#" class="text-white"><i class="fab fa-instagram"></i></a></p>
+  </div>
+</footer>
+<div class="modal fade" id="registroModal" tabindex="-1" role="dialog" aria-labelledby="registroModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="registroModalLabel">Registro e Inicio de Sesión</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="inicioSesionForm">
+          <div class="mb-3">
+            <label for="inputEmail" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="correo@ejemplo.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="inputPassword" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+        </form>
+        <hr>
+        <p class="text-center">¿No tienes una cuenta? <a href="registro.html" id="registroLink">Regístrate aquí</a>.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<script src="carrito.js"></script>
+<script src="main.js"></script> 
+<script src="cliente.js"></script> 
+</body>
+</html>

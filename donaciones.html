@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donaciones</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/lux/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+ 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="logo.png" alt="Logo" width="150">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html" onclick="loadSection('inicio')">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="nosotros.html" onclick="loadSection('nosotros')">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tienda.html" onclick="loadSection('tienda')">Tienda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="donaciones.html" onclick="loadSection('donaciones')">Donaciones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html" onclick="loadSection('contacto')">Contacto</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="carrito.html">
+            <i class="fas fa-shopping-cart"></i> Carrito
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#registroModal">
+            Registro / Iniciar Sesión
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="bg-light py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <h1 class="display-4">¡Haz tu Donación!</h1>
+                <p class="lead">Tu contribución marca la diferencia. Ayúdanos a cuidar y proteger a nuestras mascotas.</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Organizaciones Sin Fines de Lucro</h2>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="callejeros.png" class="d-block w-100" alt="Organización 1">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Callejeros buscan hogar</h5>
+                <p>Callejeros Buscan Hogar es una fundación dedicada al rescate, cuidado y reubicación de perros y gatos en situación de abandono o riesgo en nuestra comunidad. Nuestra misión es brindar una segunda oportunidad a estos animales, ofreciéndoles cuidados veterinarios, rehabilitación física y emocional, y, finalmente, encontrarles un hogar amoroso y permanente donde puedan vivir felices y seguros.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="garrasypatas.png" class="d-block w-100" alt="Organización 2">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Garras y Patas</h5>
+                <p>Garras y Patas es una organización comprometida con el bienestar y la protección de los animales más vulnerables de nuestra comunidad. Desde nuestra fundación, nos hemos dedicado a rescatar, rehabilitar y encontrar hogares amorosos para perros y gatos en situación de abandono, maltrato o riesgo..</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title text-center mb-4">Formulario de Donación</h2>
+                        <form id="donationForm">
+                            <div class="form-group">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico">
+                            </div>
+                            <div class="form-group">
+                                <label for="monto">Monto de Donación</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">$</span>
+                                    </div>
+                                    <input type="number" class="form-control" id="monto" placeholder="Ingresa el monto">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Enviar Donación</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="alert alert-info mt-4" role="alert" id="subscriptionMessage" style="display: none;">
+                    ¡Gracias por tu generosidad! Te hemos enviado un correo electrónico con más detalles.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-dark text-white text-center py-4">
+  <div class="container">
+    <p>&copy; 2024 Tienda de Mascotas Solidaria. Todos los derechos reservados.</p>
+    <p>Síguenos en <a href="#" class="text-white"><i class="fab fa-facebook"></i></a> <a href="#" class="text-white"><i class="fab fa-instagram"></i></a></p>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<script src="donaciones.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
